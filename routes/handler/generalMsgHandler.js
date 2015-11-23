@@ -11,20 +11,39 @@ module.exports.receive = function(req, res,next){
     // 微信输入信息都在req.weixin上
     var message = req.weixin;
     if (message.MsgType === 'text') {
-        res.reply({
-          content: '哈哈，你好啊！,我是胖子',
-          type: 'text'
-        });
-        //你也可以这样回复text类型的信息
-        //res.reply('hehe');
+        if(message.Content == '仰望星空'){
+            res.reply([
+              {
+                title: '仰望星空',
+                description: '不悔梦归处，只恨太匆匆',
+                picurl: 'http://7xokf9.com1.z0.glb.clouddn.com/abc.png',
+                url: 'https://star45.github.io/'
+              }
+            ]);
+        }else if(message.Content == '瘦子'){
+            res.reply([
+              {
+                title: '胖子与瘦子',
+                description: '不悔梦归处，只恨太匆匆',
+                picurl: config.imageURL_1,
+                url: 'https://star45.github.io/'
+              }
+            ]);
+        }else{
+            res.reply({
+              content: '哈哈，你好啊！,我是胖子',
+              type: 'text'
+            });
+            //你也可以这样回复text类型的信息
+            //res.reply('hehe'); 
+        }
     } else if (message.MsgType === 'image') {
-        // 回复高富帅(图文回复)
         res.reply([
           {
-            title: '你来我家接我吧',
-            description: '这是女神与高富帅之间的对话',
-            picurl: 'http://nodeapi.cloudfoundry.com/qrcode.jpg',
-            url: 'http://nodeapi.cloudfoundry.com/'
+            title: '仰望星空',
+            description: '不悔梦归处，只恨太匆匆',
+            picurl: 'http://7xokf9.com1.z0.glb.clouddn.com/abc.png',
+            url: 'https://star45.github.io/'
           }
         ]);
     } else if (message.MsgType === 'voice') {

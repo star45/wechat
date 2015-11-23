@@ -3,8 +3,6 @@ var router = express.Router();
 var wechat = require('wechat'); 
 var log = require('appLog');
 var config = require('../config');
-var messageHandler = require('./handler/MessageHandler');
-
 var encryption = require('./utils/encryption');
 var generalMsgHandler = require('./handler/generalMsgHandler');
 
