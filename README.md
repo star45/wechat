@@ -9,4 +9,5 @@
 
 
 
-[img_tech_1]:https://github.com/star45/wechat/public/images/QRcode.jpg "二维码" 
+[img_tech_1]: https://github.com/star45/wechat/blob/master/public/images/QRcode.jpg "二维码"
+
