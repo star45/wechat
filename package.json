@@ -18,6 +18,6 @@
     "wechat": "~2.0.3"
   },
   "scripts": {
-    "test": "test/app-test.js"
+    "test": ""
   }
 }
