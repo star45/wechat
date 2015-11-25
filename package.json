@@ -14,9 +14,9 @@
     "jade": "~1.11.0",
     "log4js": "~0.6.28",
     "morgan": "~1.6.1",
-    "redis": "^2.3.1",
+    "redis": "~2.3.1",
     "serve-favicon": "~2.3.0",
-    "wechat": "^2.0.3"
+    "wechat": "~2.0.3"
   },
   "scripts": {
     "test": "test/app-test.js"
