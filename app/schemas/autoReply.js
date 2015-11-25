@@ -1,6 +1,7 @@
 var redis = require("redis");
 var client = redis.createClient(6379,'114.215.155.89');
 
+var bcrypt = require('bcrypt');    //用于密码加密
 var SALT_WORK_FACTOR = 10; //密码破解需要的强度，越大破解需要时间越长
 
 //电影数据类型
