@@ -1,4 +1,6 @@
 # wechat
+
+[![Join the chat at https://gitter.im/star45/wechat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/star45/wechat?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 个人微信公众号的开发
 
 [![NPM](https://travis-ci.org/star45/wechat.svg?branch=master)](https://travis-ci.org/star45/wechat/)
